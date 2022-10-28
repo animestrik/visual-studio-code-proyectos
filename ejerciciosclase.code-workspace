@@ -1,0 +1,34 @@
+{
+	"folders": [
+		{
+			"path": "../CLASES DE PROGRAMACION FULLSTACK/eclipse-workspace/ejerciciosclase"
+		},
+		{
+			"path": "../CLASES DE PROGRAMACION FULLSTACK/eclipse-workspace/estructuras"
+		},
+		{
+			"path": "../CLASES DE PROGRAMACION FULLSTACK/eclipse-workspace/ficheros"
+		},
+		{
+			"path": "../CLASES DE PROGRAMACION FULLSTACK/eclipse-workspace/funciones"
+		},
+		{
+			"path": "../CLASES DE PROGRAMACION FULLSTACK/eclipse-workspace/poo1"
+		},
+		{
+			"path": "../CLASES DE PROGRAMACION FULLSTACK/eclipse-workspace/prueba2"
+		},
+		{
+			"path": "ejemplomaven"
+		},
+		{
+			"path": "EjemploPOOCompleto"
+		},
+		{
+			"path": "ejercicios"
+		}
+	],
+	"settings": {
+		"java.configuration.updateBuildConfiguration": "automatic"
+	}
+}
