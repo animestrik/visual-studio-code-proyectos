@@ -1,9 +1,5 @@
 {
-	"folders": [
-		{
-			"path": "ejercicios"
-		}
-	],
+	"folders": [],
 	"settings": {
 		"java.configuration.updateBuildConfiguration": "automatic"
 	}
