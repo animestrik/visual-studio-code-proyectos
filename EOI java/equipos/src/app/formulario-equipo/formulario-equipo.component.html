@@ -1,5 +1,17 @@
+<h1>Insertar Equipos</h1>
+
   <label for="nombre" class="form-label">Nombre del equipo:</label>
-  <input type="text" class="form-control mb-3" id="nombre" placeholder="nombre" [(ngModel)]="equipo.nombre">
+  <input type="file" class="form-control" (change)="fileChangeEvent($event)" >
+  <image-cropper
+    [imageChangedEvent]="imageChangedEvent"
+    [maintainAspectRatio]="true"
+    [aspectRatio]="16 / 9"
+    format="png"
+    (imageCropped)="imageCropped($event)">
+  </image-cropper>
+<img [src]="croppedImage" width="200">
+
+<br><br>
 
   <label for="ciudad" class="form-label">Ciudad:</label>
   <input type="text" class="form-control mb-3" id="ciudad" placeholder="ciudad" [(ngModel)]="equipo.ciudad">
@@ -8,3 +20,4 @@
   <input type="date" class="form-control mb-3" id="fechaCreacion" placeholder="fechaCreacion" [(ngModel)]="equipo.fechaCreacion">
 
 <button type="button" class="btn btn-primary mb-4" (click)="postEquipo()">Enviar</button>
+

@@ -21,4 +21,15 @@ export class BackendService {
   deleteEquipo(id:number) {
     return this.http.delete(`${SERVER}equipos/${id}`);
   }
+  getjugadores () {
+    return this.http.get(`${SERVER}jugadores?equipo=4`);
+  }
+
+  postjugadores(jugador:any) {
+    return this.http.post(`${SERVER}jugadores`, jugador)
+  }
+
+  deletejugador(id:number) {
+    return this.http.delete(`${SERVER}jugador/${id}`);
+  }
 }

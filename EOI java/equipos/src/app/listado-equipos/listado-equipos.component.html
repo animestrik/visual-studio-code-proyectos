@@ -1,7 +1,9 @@
+<h1>Equipos</h1>
+
 <ol class="list-group list-group-numbered">
   <li *ngFor="let equipo of equipos" class="list-group-item d-flex justify-content-between align-items-start">
     <div class="ms-2 me-auto">
-      <div class="fw-bold">{{equipo.nombre}}</div>
+      <div class="fw-bold"><img [src]="equipo.nombre"></div>
       {{equipo.ciudad}}
     </div>
     <div class="ms-2">
