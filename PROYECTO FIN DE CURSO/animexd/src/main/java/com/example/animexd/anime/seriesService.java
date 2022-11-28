@@ -23,7 +23,7 @@ public class seriesService {
     }
 
     public List<series> getBytipo(String tipo) {
-        return seriesRepository.findBytipo(tipo);
+        return seriesRepository.findByTipo(tipo);
     }
 
     public series getById(int id) {

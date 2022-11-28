@@ -7,12 +7,10 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface seriesRepository extends CrudRepository<series, Integer>{
-    // Equipos en cuyo nombre esté incluido el string de búsqueda
+    List<series> findByIdContaining(int id);
     List<series> findByNombreContaining(String nombre);
-
-    // Filtra por tipo
-    List<series> findBytipo(String tipo);
-
-    // Filtra por nombre Y tipo
-    List<series> findByNombreContainingAndtipo(String nombre, String tipo);
+    List<series> findByTipo(String tipo);
+    List<series> findByNombreContainingAndTipo(String nombre, String tipo);
+    
+    
 }
