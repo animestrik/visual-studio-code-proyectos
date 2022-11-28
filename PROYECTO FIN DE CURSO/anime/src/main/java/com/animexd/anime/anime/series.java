@@ -9,10 +9,10 @@ import lombok.NoArgsConstructor;
 @Data @AllArgsConstructor @NoArgsConstructor
 public class series {
     @Id private int id;
-    private String Nombre;
-    private String Imagen;
-    private String Tipo;
-    private String Sinopsis;
-    private String Personajesprincipales;
+    private String nombre;
+    private String imagen;
+    private String tipo;
+    private String sinopsis;
+    private String personajesprincipales;
 
 }

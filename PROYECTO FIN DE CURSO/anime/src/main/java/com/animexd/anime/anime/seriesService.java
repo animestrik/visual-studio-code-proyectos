@@ -9,8 +9,7 @@ import org.springframework.web.server.ResponseStatusException;
 
 import lombok.RequiredArgsConstructor;
 
-@Service
-@RequiredArgsConstructor
+@Service @RequiredArgsConstructor
 public class seriesService {
     private final seriesRepository seriesRepository;
     private final JdbcAggregateTemplate JdbcTemplate;
@@ -19,17 +18,35 @@ public class seriesService {
         return (List<series>) seriesRepository.findAll();
     }
 
-    public series getBySeries(int id) {
+    public List<series> getById(int id) {
         return seriesRepository.findById(id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Anime no encontrado."));
     }
 
+    public List<series> getBynombre(String nombre) {
+        return seriesRepository.findBynombreContaining(nombre);
+    }
+
+    public List<series> getByimagen(String imagen) {
+        return seriesRepository.findBynombreContaining(imagen);
+    }
+
+    public List<series> getBytipo(String tipo) {
+        return seriesRepository.findBynombreContaining(tipo);
+    }
+
+    public List<series> getBysinopsis(String sinopsis) {
+        return seriesRepository.findBynombreContaining(sinopsis);
+    }
+
+    public List<series> getBypersonajesprincipales(String personajesprincipales) {
+        return seriesRepository.findBynombreContaining(personajesprincipales);
+    }
+    
     public series insert(series s) {
-        
         return JdbcTemplate.insert(s);
     }
 
     public void delete(int id) {
         seriesRepository.deleteById(id);
     }
-    
 }

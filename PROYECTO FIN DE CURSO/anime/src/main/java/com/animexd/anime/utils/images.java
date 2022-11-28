@@ -1,4 +1,4 @@
-package utils;
+package com.animexd.anime.utils;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -15,7 +15,6 @@ import javax.imageio.ImageIO;
 import org.springframework.stereotype.Component;
 
 @Component
-
 public class images {
     public String saveImageBase64(String dir, String imageB64) {
         String[] parts = imageB64.split(",");
