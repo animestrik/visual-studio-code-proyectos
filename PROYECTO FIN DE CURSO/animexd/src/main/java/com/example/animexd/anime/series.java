@@ -11,9 +11,14 @@ import lombok.NoArgsConstructor;
 public class series {
     @Column("series")
     @Id private int id;
+    @Column("series")
     private String nombre;
+    @Column("series")
     private String tipo;
+    @Column("series")
     private String imagen;
+    @Column("series")
     private String sinopsis;
-    private String personajesprincipales;
+    @Column("series")
+    private String fecha_inicio;
 }

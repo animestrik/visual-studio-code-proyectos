@@ -29,7 +29,7 @@ public class seriesController {
         if (nombre != null) {
             return seriesService.getByNombre(nombre);
         } else if (tipo != null) {
-            return seriesService.getBytipo(tipo);
+            return seriesService.getByTipo(tipo);
         } else {
             return seriesService.getAll();
         }

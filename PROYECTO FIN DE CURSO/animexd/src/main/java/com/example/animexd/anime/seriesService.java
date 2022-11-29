@@ -22,7 +22,7 @@ public class seriesService {
         return seriesRepository.findByNombreContaining(nombre);
     }
 
-    public List<series> getBytipo(String tipo) {
+    public List<series> getByTipo(String tipo) {
         return seriesRepository.findByTipo(tipo);
     }
 
