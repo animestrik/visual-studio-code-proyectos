@@ -1,6 +1,8 @@
 import { BackendService } from './../services/backend.service';
 import { Component, OnInit } from '@angular/core';
 import Swal from 'sweetalert2';
+import { registerLocaleData } from '@angular/common';
+import localeEs from '@angular/common/locales/es';
 
 @Component({
   selector: 'app-listado-equipos',
@@ -13,6 +15,7 @@ export class ListadoEquiposComponent implements OnInit {
   constructor(private backend:BackendService) { }
 
   ngOnInit(): void {
+    registerLocaleData(localeEs);
     this.getEquipos();
   }
 

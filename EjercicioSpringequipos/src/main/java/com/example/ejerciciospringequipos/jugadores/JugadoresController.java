@@ -21,7 +21,7 @@ import lombok.RequiredArgsConstructor;
 @RestController
 @RequestMapping("/jugadores")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 public class JugadoresController {
     private final JugadoresService jugadoresService;
 
@@ -47,7 +47,7 @@ public class JugadoresController {
         return jugadoresService.insert(jugador);
     }
 
-    @DeleteMapping
+    @DeleteMapping("/{id}")
     public void delete(@PathVariable int id) {
         jugadoresService.delete(id);
     }

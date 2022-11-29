@@ -25,17 +25,23 @@ export class ListadoJugadoresComponent implements OnInit {
     })
   }
 
-  deleteJugadores(jugadores:any) {
-    this.backend.deletejugador(jugadores.id).subscribe(() => {
-      Swal.fire({
-        icon: 'success',
-        title: 'Registro borrado',
-        text: `El jugador ${jugadores.nombre} se ha borrado correctamente`
-      });
-      this.backend.getjugadores().subscribe((jugadores) => {
-        this.jugadores = jugadores;
-      });
-    });
+  deleteJugadores(jugador:any) {
+    Swal.fire({
+      icon: 'question',
+      title: '¿Estás seguro?',
+      showCancelButton: true,
+      cancelButtonText: 'Cancelar',
+    }).then((result) => {
+      if (result.isConfirmed) {
+        this.backend.deletejugador(jugador.id).subscribe(() => {
+          this.getJugadores();
+          Swal.fire({
+            icon: 'success',
+            title: `El jugador '${jugador.nombre}' se ha borrado correctamente`
+          })
+        });
+      }
+    })
   }
 
 }
