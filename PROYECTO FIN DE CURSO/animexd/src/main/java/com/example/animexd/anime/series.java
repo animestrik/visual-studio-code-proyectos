@@ -9,16 +9,16 @@ import lombok.NoArgsConstructor;
 
 @Data @AllArgsConstructor @NoArgsConstructor
 public class series {
-    @Column("series")
+    @Column("id")
     @Id private int id;
-    @Column("series")
+    @Column("nombre")
     private String nombre;
-    @Column("series")
+    @Column("tipo")
     private String tipo;
-    @Column("series")
+    @Column("imagen")
     private String imagen;
-    @Column("series")
+    @Column("sinopsis")
     private String sinopsis;
-    @Column("series")
+    @Column("fecha_inicio")
     private String fecha_inicio;
 }

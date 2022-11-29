@@ -13,4 +13,12 @@ export class BackendService {
   getSeries() {
     return this.http.get(`${SERVER}series`);
   }
+
+  postSeries(series:any) {
+    return this.http.post(`${SERVER}series`, series);
+  }
+
+  deleteSeries(id:number) {
+    return this.http.delete(`${SERVER}series/${id}`);
+  }
 }
