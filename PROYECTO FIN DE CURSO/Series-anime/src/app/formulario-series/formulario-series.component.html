@@ -3,18 +3,32 @@
 <label for="nombre" class="form-label">Nombre:</label>
 <input type="text" class="form-control mb-3" id="nombre" placeholder="nombre" [(ngModel)]="series.nombre">
 
-<label for="generos" class="form-label">Generos:</label>
+<label for="generos" class="form-label mb-3"><a><img [ngbPopover]="popContent" triggers="mouseenter:mouseleave"
+      placement="right" [popoverTitle]="popTitle" src="Separa por comillas los generos" class="card-img-top" alt="Nota:"
+      src="https://cdn3.emoji.gg/emojis/9610_Joker_Dance.gif" width="64px" height="64px" alt="Joker_Dance"></a></label>
 <input type="text" class="form-control mb-3" id="generos" placeholder="generos" [(ngModel)]="series.generos">
+<ng-template #popContent>
+  <p>Deves separar los generos por comas.</p>
+</ng-template>
+<ng-template #popTitle><b><u>Nota de los generos:</u></b></ng-template>
 
 <label for="sinopsis" class="form-label">Sinopsis:</label>
 <input type="text" class="form-control mb-3" id="sinopsis" placeholder="sinopsis" [(ngModel)]="series.sinopsis">
 
-<label for="fecha_inicio" class="form-label">Fecha de inicio:</label>
+<label for="fecha_inicio" class="form-label"><a><img [ngbPopover]="popContent1" triggers="mouseenter:mouseleave"
+      placement="right" [popoverTitle]="popTitle1" src="popover" class="card-img-top" alt="Nota:"
+      src="https://cdn3.emoji.gg/emojis/2234-e-dater-eww-emoji.gif" width="64px" height="64px"
+      alt="E_Dater_Eww_Emoji"></a></label>
 <input type="date" class="form-control mb-3" id="fecha_inicio" placeholder="fecha_inicio"
   [(ngModel)]="series.fecha_inicio">
+  <ng-template #popContent1>
+    <p>Deves poner la fecha de cuando salio el anime.</p>
+  </ng-template>
+  <ng-template #popTitle1><b><u>Nota de las fechas:</u></b></ng-template>
 
 <div class="mb-3 row">
-  <label class="form-label">Imagen del anime:</label>
+  <label class="form-label">Imagen:<a><img src="https://cdn3.emoji.gg/emojis/9239-kokoro-think.png" width="64px"
+        height="64px" alt="Kokoro_Think"></a></label>
   <div class="col-sm-10">
     <input type="file" class="form-control" (change)="changeImage($event)" name="series" [(ngModel)]="series.imagen">
   </div>
@@ -25,4 +39,5 @@
   </div>
 </div>
 
-<button type="button" class="btn btn-primary mb-4" (click)="postSeries()">Enviar</button>
+<button type="button" class="btn mb-4" (click)="postSeries()"><a><img src="https://cdn3.emoji.gg/emojis/6547-slap.gif"
+      width="64px" height="64px" alt="slap"></a></button>

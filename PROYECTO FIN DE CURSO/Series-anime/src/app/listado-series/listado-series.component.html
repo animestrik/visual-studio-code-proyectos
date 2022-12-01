@@ -1,201 +1,98 @@
 <form action="/browse" method="get">
-  <div class="input-group" style="margin-bottom: 10px;">
-    <span class="multiselect-native-select"><select name="genre[]" id="genre_select" multiple="multiple">
-        <option value="accion">Acción</option>
-        <option value="artes-marciales">Artes Marciales</option>
-        <option value="aventura">Aventuras</option>
-        <option value="carreras">Carreras</option>
-        <option value="ciencia-ficcion">Ciencia Ficción</option>
-        <option value="comedia">Comedia</option>
-        <option value="demencia">Demencia</option>
-        <option value="demonios">Demonios</option>
-        <option value="deportes">Deportes</option>
-        <option value="drama">Drama</option>
-        <option value="ecchi">Ecchi</option>
-        <option value="escolares">Escolares</option>
-        <option value="espacial">Espacial</option>
-        <option value="fantasia">Fantasía</option>
-        <option value="harem">Harem</option>
-        <option value="historico">Historico</option>
-        <option value="infantil">Infantil</option>
-        <option value="josei">Josei</option>
-        <option value="juegos">Juegos</option>
-        <option value="magia">Magia</option>
-        <option value="mecha">Mecha</option>
-        <option value="militar">Militar</option>
-        <option value="misterio">Misterio</option>
-        <option value="musica">Música</option>
-        <option value="parodia">Parodia</option>
-        <option value="policia">Policía</option>
-        <option value="psicologico">Psicológico</option>
-        <option value="recuentos-de-la-vida">Recuentos de la vida</option>
-        <option value="romance">Romance</option>
-        <option value="samurai">Samurai</option>
-        <option value="seinen">Seinen</option>
-        <option value="shoujo">Shoujo</option>
-        <option value="shounen">Shounen</option>
-        <option value="sobrenatural">Sobrenatural</option>
-        <option value="superpoderes">Superpoderes</option>
-        <option value="suspenso">Suspenso</option>
-        <option value="terror">Terror</option>
-        <option value="vampiros">Vampiros</option>
-        <option value="yaoi">Yaoi</option>
-        <option value="yuri">Yuri</option>
-      </select>
-      <div class="btn-group"><button type="button" class="multiselect dropdown-toggle btn btn-sm btn-default"
-          data-toggle="dropdown" nombre="None selected" aria-expanded="false"><span
-            class="multiselect-selected-text"><b>Genero:</b> Todos</span> <b class="caret"></b></button>
-        <ul class="multiselect-container genres-select dropdown-menu">
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="accion"> Acción</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="artes-marciales"> Artes
-                Marciales</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="aventura"> Aventuras</label></a>
-          </li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="carreras"> Carreras</label></a>
-          </li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="ciencia-ficcion"> Ciencia
-                Ficción</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="comedia"> Comedia</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="demencia"> Demencia</label></a>
-          </li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="demonios"> Demonios</label></a>
-          </li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="deportes"> Deportes</label></a>
-          </li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="drama"> Drama</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="ecchi"> Ecchi</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="escolares"> Escolares</label></a>
-          </li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="espacial"> Espacial</label></a>
-          </li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="fantasia"> Fantasía</label></a>
-          </li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="harem"> Harem</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="historico"> Historico</label></a>
-          </li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="infantil"> Infantil</label></a>
-          </li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="josei"> Josei</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="juegos"> Juegos</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="magia"> Magia</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="mecha"> Mecha</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="militar"> Militar</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="misterio"> Misterio</label></a>
-          </li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="musica"> Música</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="parodia"> Parodia</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="policia"> Policía</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="psicologico">
-                Psicológico</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="recuentos-de-la-vida"> Recuentos
-                de la vida</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="romance"> Romance</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="samurai"> Samurai</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="seinen"> Seinen</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="shoujo"> Shoujo</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="shounen"> Shounen</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="sobrenatural">
-                Sobrenatural</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="superpoderes">
-                Superpoderes</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="suspenso"> Suspenso</label></a>
-          </li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="terror"> Terror</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="vampiros"> Vampiros</label></a>
-          </li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="yaoi"> Yaoi</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="yuri"> Yuri</label></a></li>
-        </ul>
-      </div>
-    </span>
-    <span class="multiselect-native-select"><select name="year[]" id="year_select" multiple="multiple">
-        <option value="2022">2022</option>
-        <option value="2021">2021</option>
-        <option value="2020">2020</option>
-        <option value="2019">2019</option>
-        <option value="2018">2018</option>
-        <option value="2017">2017</option>
-        <option value="2016">2016</option>
-        <option value="2015">2015</option>
-        <option value="2014">2014</option>
-        <option value="2013">2013</option>
-        <option value="2012">2012</option>
-        <option value="2011">2011</option>
-        <option value="2010">2010</option>
-        <option value="2009">2009</option>
-        <option value="2008">2008</option>
-        <option value="2007">2007</option>
-        <option value="2006">2006</option>
-        <option value="2005">2005</option>
-        <option value="2004">2004</option>
-        <option value="2003">2003</option>
-        <option value="2002">2002</option>
-        <option value="2001">2001</option>
-        <option value="2000">2000</option>
-        <option value="1999">1999</option>
-        <option value="1998">1998</option>
-        <option value="1997">1997</option>
-        <option value="1996">1996</option>
-        <option value="1995">1995</option>
-        <option value="1994">1994</option>
-        <option value="1993">1993</option>
-        <option value="1992">1992</option>
-        <option value="1991">1991</option>
-        <option value="1990">1990</option>
-      </select>
-      <div class="btn-group"><button type="button" class="multiselect dropdown-toggle btn btn-sm btn-default"
-          data-toggle="dropdown" nombre="None selected"><span class="multiselect-selected-text"><b>Año:</b>
-            Todos</span> <b class="caret"></b></button>
-        <ul class="multiselect-container year-select dropdown-menu">
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="2022"> 2022</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="2021"> 2021</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="2020"> 2020</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="2019"> 2019</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="2018"> 2018</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="2017"> 2017</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="2016"> 2016</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="2015"> 2015</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="2014"> 2014</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="2013"> 2013</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="2012"> 2012</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="2011"> 2011</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="2010"> 2010</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="2009"> 2009</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="2008"> 2008</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="2007"> 2007</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="2006"> 2006</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="2005"> 2005</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="2004"> 2004</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="2003"> 2003</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="2002"> 2002</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="2001"> 2001</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="2000"> 2000</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="1999"> 1999</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="1998"> 1998</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="1997"> 1997</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="1996"> 1996</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="1995"> 1995</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="1994"> 1994</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="1993"> 1993</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="1992"> 1992</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="1991"> 1991</label></a></li>
-          <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="1990"> 1990</label></a></li>
-        </ul>
-      </div>
-    </span>
-    <button type="submit" class="btn btn-sm btn-primary">
-      <span class="fa fa-filter" aria-hidden="true"></span> Filtrar
-    </button>
-  </div>
+  <select [(ngModel)]="generos" class="form-select mb-3" name="genre" id="genre_select">
+    <option value="">Filtro por generos:</option>
+    <option value="accion">Acción</option>
+    <option value="artes-marciales">Artes Marciales</option>
+    <option value="aventura">Aventuras</option>
+    <option value="carreras">Carreras</option>
+    <option value="ciencia-ficcion">Ciencia Ficción</option>
+    <option value="comedia">Comedia</option>
+    <option value="demencia">Demencia</option>
+    <option value="demonios">Demonios</option>
+    <option value="deportes">Deportes</option>
+    <option value="drama">Drama</option>
+    <option value="ecchi">Ecchi</option>
+    <option value="escolares">Escolares</option>
+    <option value="espacial">Espacial</option>
+    <option value="fantasia">Fantasía</option>
+    <option value="harem">Harem</option>
+    <option value="historico">Historico</option>
+    <option value="infantil">Infantil</option>
+    <option value="josei">Josei</option>
+    <option value="juegos">Juegos</option>
+    <option value="magia">Magia</option>
+    <option value="mecha">Mecha</option>
+    <option value="militar">Militar</option>
+    <option value="misterio">Misterio</option>
+    <option value="musica">Música</option>
+    <option value="parodia">Parodia</option>
+    <option value="policia">Policía</option>
+    <option value="psicologico">Psicológico</option>
+    <option value="recuentos-de-la-vida">Recuentos de la vida</option>
+    <option value="romance">Romance</option>
+    <option value="samurai">Samurai</option>
+    <option value="seinen">Seinen</option>
+    <option value="shoujo">Shoujo</option>
+    <option value="shounen">Shounen</option>
+    <option value="sobrenatural">Sobrenatural</option>
+    <option value="superpoderes">Superpoderes</option>
+    <option value="suspenso">Suspenso</option>
+    <option value="terror">Terror</option>
+    <option value="vampiros">Vampiros</option>
+    <option value="yaoi">Yaoi</option>
+    <option value="yuri">Yuri</option>
+  </select>
+  <select [(ngModel)]="date" class="form-select mb-3" name="year" id="year_select">
+    <option value="">Filtro por año:</option>
+    <option value="2022">2022</option>
+    <option value="2021">2021</option>
+    <option value="2020">2020</option>
+    <option value="2019">2019</option>
+    <option value="2018">2018</option>
+    <option value="2017">2017</option>
+    <option value="2016">2016</option>
+    <option value="2015">2015</option>
+    <option value="2014">2014</option>
+    <option value="2013">2013</option>
+    <option value="2012">2012</option>
+    <option value="2011">2011</option>
+    <option value="2010">2010</option>
+    <option value="2009">2009</option>
+    <option value="2008">2008</option>
+    <option value="2007">2007</option>
+    <option value="2006">2006</option>
+    <option value="2005">2005</option>
+    <option value="2004">2004</option>
+    <option value="2003">2003</option>
+    <option value="2002">2002</option>
+    <option value="2001">2001</option>
+    <option value="2000">2000</option>
+    <option value="1999">1999</option>
+    <option value="1998">1998</option>
+    <option value="1997">1997</option>
+    <option value="1996">1996</option>
+    <option value="1995">1995</option>
+    <option value="1994">1994</option>
+    <option value="1993">1993</option>
+    <option value="1992">1992</option>
+    <option value="1991">1991</option>
+    <option value="1990">1990</option>
+  </select>
 </form>
-<div class="row row-cols-1 row-cols-md-3 g-4">
+<div class="row row-cols-1 row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-6 g-50">
   <div *ngFor="let serie of series" class="col">
-    <div class="card">
+    <div
+      *ngIf="(!generos || serie.generos.toLowerCase().includes(generos)) && (!date || serie.fecha_inicio.includes(date))"
+      class="card">
       <img [ngbPopover]="popContent" triggers="mouseenter:mouseleave" placement="end" [popoverTitle]="popTitle"
         src="{{serie.imagen}}" class="card-img-top" alt="{{serie.nombre}}">
       <div class="card-body">
         <h5 class="card-title">{{serie.nombre}}</h5>
-        <ng-template #popContent><u><b>Sinopsis:</b></u><p><b>{{serie.sinopsis}}</b></p><u><b>Generos:</b></u><p><b>{{serie.generos}}</b></p><b><u>Fecha de salida:</u></b><p><b>{{serie.fecha_inicio}}</b></p></ng-template>
+        <ng-template #popContent><u><b>Sinopsis:</b></u>
+          <p><b>{{serie.sinopsis}}</b></p><u><b>Generos:</b></u>
+          <p><b>{{serie.generos}}</b></p><b><u>Fecha de salida:</u></b>
+          <p><b>{{serie.fecha_inicio}}</b></p>
+        </ng-template>
         <ng-template #popTitle><b><u>{{serie.nombre}}</u></b></ng-template>
       </div>
     </div>

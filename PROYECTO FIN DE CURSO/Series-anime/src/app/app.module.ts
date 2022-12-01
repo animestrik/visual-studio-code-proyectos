@@ -30,7 +30,8 @@ const APP_ROUTES: Route[] = [
     FormsModule,
     ImageCropperModule,
     NgbModule,
-    NgbPopoverModule
+    NgbPopoverModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

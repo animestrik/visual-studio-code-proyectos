@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListadoSeriesComponent implements OnInit {
   series:any;
+  generos:string = "";
+  date:string = "";
 
   constructor(private backend: BackendService) { }
 
@@ -17,5 +19,7 @@ export class ListadoSeriesComponent implements OnInit {
       console.log(this.series);
     })
   }
+
+
 
 }
