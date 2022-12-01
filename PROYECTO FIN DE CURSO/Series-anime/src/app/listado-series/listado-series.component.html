@@ -1,4 +1,5 @@
-<form action="/browse" method="get">
+<input class="form-control mb-2" type="text" placeholder="buscar" aria-label="Buscar" [(ngModel)]="buscar">
+
   <select [(ngModel)]="generos" class="form-select mb-3" name="genre" id="genre_select">
     <option value="">Filtro por generos:</option>
     <option value="accion">Acción</option>
@@ -78,9 +79,8 @@
     <option value="1991">1991</option>
     <option value="1990">1990</option>
   </select>
-</form>
 <div class="row row-cols-1 row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-6 g-50">
-  <div *ngFor="let serie of series" class="col">
+  <div *ngFor="let serie of series | filtrar:buscar"  class="col">
     <div
       *ngIf="(!generos || serie.generos.toLowerCase().includes(generos)) && (!date || serie.fecha_inicio.includes(date))"
       class="card">

@@ -9,6 +9,7 @@ import { Route, RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { ImageCropperModule } from 'ngx-image-cropper';
 import { NgbModule, NgbPopoverModule } from '@ng-bootstrap/ng-bootstrap';
+import { FiltrarPipe } from './pipes/filtrar.pipe';
 
 const APP_ROUTES: Route[] = [
 
@@ -21,7 +22,8 @@ const APP_ROUTES: Route[] = [
   declarations: [
     AppComponent,
     ListadoSeriesComponent,
-    FormularioSeriesComponent
+    FormularioSeriesComponent,
+    FiltrarPipe
   ],
   imports: [
     RouterModule.forRoot(APP_ROUTES, { initialNavigation: 'enabledBlocking', onSameUrlNavigation: 'reload' }),

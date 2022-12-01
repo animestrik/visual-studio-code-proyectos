@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-dark mb-3" style="background-color: #000000;">
+<nav class="navbar navbar-expand-lg bg-dark mb-3">
   <div class="container-fluid">
     <a class="navbar-brand"><img src="https://cdn3.emoji.gg/emojis/1061-rias-cute.gif" width="64px" height="64px" alt="Rias_cute"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -8,15 +8,10 @@
       <div class="navbar-nav">
         <a class="nav-link active" aria-current="page" routerLink="listado-series/"><img src="https://imagizer.imageshack.com/img924/8646/8Icpuz.png" alt="series" width="200px" height="128px"></a>
         <a class="nav-link active" routerLink="insertar-series"><img src="https://imagizer.imageshack.com/img924/654/3enSnw.jpg" alt="insertar-imagen" width="200px" height="128px"></a>
-        <a class="nav-link active" href="https://www3.animeflv.net" target="_blank"><img src="https://repository-images.githubusercontent.com/218587089/765de880-fb1d-11e9-9773-3b5cd13291ee" alt="animeflv" width="200px" height="128px"></a>
       </div>
     </div>
   </div>
-  <form class="d-flex">
-    <a><img src="https://cdn3.emoji.gg/emojis/4961-rias-smile.png" width="64px" height="64px" alt="Rias_Smile"></a>
-    <input class="form-control me-2" type="buscar" placeholder="..." aria-label="Buscar" (select)="getSeries()">
-    <button class="btn btn-outline-success" type="submit">Buscar</button>
-  </form>
+  <a class="nav-link active" href="https://www3.animeflv.net" target="_blank"><img src="https://repository-images.githubusercontent.com/218587089/765de880-fb1d-11e9-9773-3b5cd13291ee" alt="animeflv" width="200px" height="128px"></a>
 </nav>
 <div class="container">
   <router-outlet></router-outlet>
