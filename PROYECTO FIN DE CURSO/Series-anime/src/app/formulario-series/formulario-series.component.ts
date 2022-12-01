@@ -13,7 +13,7 @@ export class FormularioSeriesComponent implements OnInit {
   series = {
     nombre: "",
     imagen: "",
-    tipo: "",
+    generos: "",
     sinopsis: "",
     fecha_inicio: ""
   }
@@ -46,5 +46,15 @@ export class FormularioSeriesComponent implements OnInit {
     this.croppedImage = event.base64;
     this.series.nombre = this.croppedImage;
   }
+
+  changeImage(event: Event) {
+    const fileInput = event.target as HTMLInputElement;
+    if (!fileInput.files || fileInput.files.length === 0) return;
+    const reader = new FileReader();
+    reader.readAsDataURL(fileInput.files[0]);
+    reader.addEventListener('loadend', (e) => {
+      this.series.imagen = reader.result as string;
+     });
+     }
 
 }

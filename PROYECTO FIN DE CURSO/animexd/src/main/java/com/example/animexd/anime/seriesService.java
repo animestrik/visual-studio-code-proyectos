@@ -22,8 +22,8 @@ public class seriesService {
         return seriesRepository.findByNombreContaining(nombre);
     }
 
-    public List<series> getByTipo(String tipo) {
-        return seriesRepository.findByTipo(tipo);
+    public List<series> getByGeneros(String generos) {
+        return seriesRepository.findByGeneros(generos);
     }
 
     public series getById(int id) {

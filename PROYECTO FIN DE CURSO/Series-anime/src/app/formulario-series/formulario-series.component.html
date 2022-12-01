@@ -3,18 +3,8 @@
 <label for="nombre" class="form-label">Nombre:</label>
 <input type="text" class="form-control mb-3" id="nombre" placeholder="nombre" [(ngModel)]="series.nombre">
 
-<label for="imagen" class="form-label">imagen del anime:</label>
-<input type="file" class="form-control" (change)="fileChangeEvent($event)">
-<image-cropper [imageChangedEvent]="imageChangedEvent" [maintainAspectRatio]="true" [aspectRatio]="16 / 9" format="png"
-  (imageCropped)="imageCropped($event)">
-</image-cropper>
-
-<div *ngIf="croppedImage" class="text-center">
-  <img [src]="croppedImage" width="150" class="img-thumbnail mt-2">
-</div>
-
-<label for="tipo" class="form-label">Tipo:</label>
-<input type="text" class="form-control mb-3" id="tipo" placeholder="tipo" [(ngModel)]="series.tipo">
+<label for="generos" class="form-label">Generos:</label>
+<input type="text" class="form-control mb-3" id="generos" placeholder="generos" [(ngModel)]="series.generos">
 
 <label for="sinopsis" class="form-label">Sinopsis:</label>
 <input type="text" class="form-control mb-3" id="sinopsis" placeholder="sinopsis" [(ngModel)]="series.sinopsis">
@@ -22,5 +12,17 @@
 <label for="fecha_inicio" class="form-label">Fecha de inicio:</label>
 <input type="date" class="form-control mb-3" id="fecha_inicio" placeholder="fecha_inicio"
   [(ngModel)]="series.fecha_inicio">
+
+<div class="mb-3 row">
+  <label class="form-label">Imagen del anime:</label>
+  <div class="col-sm-10">
+    <input type="file" class="form-control" (change)="changeImage($event)" name="series" [(ngModel)]="series.imagen">
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-10 offset-sm-2">
+    <img class="product-img" [src]="series.imagen">
+  </div>
+</div>
 
 <button type="button" class="btn btn-primary mb-4" (click)="postSeries()">Enviar</button>

@@ -9,8 +9,8 @@ import org.springframework.stereotype.Repository;
 public interface seriesRepository extends CrudRepository<series, Integer>{
     List<series> findByIdContaining(int id);
     List<series> findByNombreContaining(String nombre);
-    List<series> findByTipo(String tipo);
-    List<series> findByNombreContainingAndTipo(String nombre, String tipo);
+    List<series> findByGeneros(String generos);
+    List<series> findByNombreContainingAndGeneros(String nombre, String generos);
     
     
 }

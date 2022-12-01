@@ -8,6 +8,7 @@ import { FormularioSeriesComponent } from './formulario-series/formulario-series
 import { Route, RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { ImageCropperModule } from 'ngx-image-cropper';
+import { NgbModule, NgbPopoverModule } from '@ng-bootstrap/ng-bootstrap';
 
 const APP_ROUTES: Route[] = [
 
@@ -28,6 +29,8 @@ const APP_ROUTES: Route[] = [
     HttpClientModule,
     FormsModule,
     ImageCropperModule,
+    NgbModule,
+    NgbPopoverModule
   ],
   providers: [],
   bootstrap: [AppComponent]

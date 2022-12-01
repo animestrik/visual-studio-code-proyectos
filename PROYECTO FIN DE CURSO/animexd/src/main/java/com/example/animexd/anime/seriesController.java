@@ -25,11 +25,11 @@ public class seriesController {
 
     @GetMapping
     public List<series> getAll(@RequestParam(required = false) String nombre,
-            @RequestParam(required = false) String tipo) {
+            @RequestParam(required = false) String generos) {
         if (nombre != null) {
             return seriesService.getByNombre(nombre);
-        } else if (tipo != null) {
-            return seriesService.getByTipo(tipo);
+        } else if (generos != null) {
+            return seriesService.getByGeneros(generos);
         } else {
             return seriesService.getAll();
         }

@@ -13,8 +13,8 @@ public class series {
     @Id private int id;
     @Column("nombre")
     private String nombre;
-    @Column("tipo")
-    private String tipo;
+    @Column("generos")
+    private String generos;
     @Column("imagen")
     private String imagen;
     @Column("sinopsis")
